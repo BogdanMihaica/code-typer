@@ -1,6 +1,6 @@
 .button {
-  width: 12rem;
-  height: 6rem;
+  width: 18rem;
+  height: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,6 +9,7 @@
   transition: all 0.5s ease;
 }
 .button p {
+  font-size: 1.6rem;
   font-family: "Raleway";
   font-weight: bold;
   color: black;

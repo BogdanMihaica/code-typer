@@ -4,6 +4,7 @@ import "./Landing.css";
 import { OptionButton } from "../../custom/OptionButton/OptionButton";
 import { ContentWrapper } from "../../helpers/ContentWrapper/ContentWrapper";
 import { FancyBackground } from "../../helpers/FancyBackground/FancyBackground";
+import { Outlet } from "react-router-dom";
 
 const Landing = () => {
   const [typedText, setTypedText] = useState("");

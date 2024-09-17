@@ -4,17 +4,16 @@ import { RouterProvider } from "react-router-dom";
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Landing from "./components/Landing/Landing";
+import { Practice } from "./components/Practice/Practice";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Landing />,
-    children: [
-      {
-        path: "landing",
-        element: <Landing />,
-      },
-    ],
+  },
+  {
+    path: "/type",
+    element: <Practice />,
   },
 ]);
 
