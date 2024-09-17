@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 
 export const FancyBackground = () => {
   const canvasRef = useRef(null);
-
+  const fontSize = 12;
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
@@ -14,7 +14,6 @@ export const FancyBackground = () => {
       "ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ";
     letters = letters.split("");
 
-    const fontSize = 9;
     const columns = canvas.width / fontSize;
 
     const drops = [];
@@ -43,6 +42,7 @@ export const FancyBackground = () => {
     <canvas
       ref={canvasRef}
       style={{
+        fontSize: { fontSize },
         position: "absolute",
         top: 0,
         left: 0,
