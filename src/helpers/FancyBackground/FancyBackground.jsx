@@ -22,7 +22,7 @@ export const FancyBackground = () => {
     }
 
     function draw() {
-      ctx.fillStyle = "#00014c20";
+      ctx.fillStyle = "#00014c33";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       for (var i = 0; i < drops.length; i++) {
         var text = letters[Math.floor(Math.random() * letters.length)];

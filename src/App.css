@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #00014c;
+  --primary-color: #00012a;
   --secondary-color: #c0c0c0;
   --valid: #5eff52;
   --valid-hover: #8cff84b3;
-  --matrix-letter: #484998;
+  --matrix-letter: #323363;
 }
 * {
   padding: 0;
